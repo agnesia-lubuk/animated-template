@@ -1,100 +1,834 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <title>Animated Template</title>
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="A-logo.ico">
+    <link rel="icon" type="image/png" href="A-logo.ico" />
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"
+    />
     <!-- AOS CSS -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!-- Tailwind Library -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/creativetimofficial/tailwind-starter-kit/compiled-tailwind.min.css" />
-</head>
-<body class="text-gray-800 antialiased">
-
-  <!-- Navigation -->
-  <nav class="top-0 absolute z-50 w-full flex flex-wrap items-center justify-between px-2 py-3 navbar-expand-lg">
-      <div class="container px-4 mx-auto flex flex-wrap items-center justify-between">
-        <!-- Nav Left Side -->
-          <div class="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
-              <a class="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-no-wrap uppercase text-white" href="https://l.facebook.com/l.php?u=https%3A%2F%2Fagnesialubuk.wixsite.com%2Fportfolio%3Ffbclid%3DIwAR0Fu8LL-JZtd1BpZxl-eLMdkrjnJqm5aTEEFvZRlE4xTsWbnXo3CFXwlsg&h=AT1uK_NtHUMx_R3ZGpH2hn6ezNjucs29gnvJVTLEeGMXRdh-SRkYvmuRxNlQAuEcpsJ16ovvR-N643KfTyXOIrYxlIGYlqSSVwabWBL5y3bfHJYiDlf_Iq6XifTgWTLXo0j4-QQr">
-                <!-- Nav Title -->
-                APL Photography
-              </a>
-              <!-- Hamburger Menu (Mobile) -->
-              <button class="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none" type="button" onclick="toggleNavbar('example-collapse-navbar')">
-                <!-- Icon -->
-                <i class="text-white fas fa-bars"></i>
-              </button>
-          </div>
-        <!-- Nav Right Side -->
-        <ul class="flex flex-col lg:flex-row list-none lg:ml-auto">
-          <!-- Social Media Button -->
-          <li class="flex items-center">
-            <a class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
-              href="https://www.facebook.com/AgnesiaLubukPhotography">
-              <!-- Icon -->
-              <i class="lg:text-gray-300 text-gray-500 fab fa-facebook text-lg leading-lg "></i>
-              <span class="lg:hidden inline-block ml-2">Share</span>
-            </a>
-          </li>
-          <!-- Social Media Button -->
-          <li class="flex items-center">
-            <a class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
-              href="https://www.instagram.com/agnesia_lubuk_photography/">
-              <!-- Icon -->
-              <i class="lg:text-gray-300 text-gray-500 fab fa-instagram text-lg leading-lg "></i>
-              <span class="lg:hidden inline-block ml-2">Tweet</span>
-            </a>
-          </li>
-          <!-- Social Media Button -->
-          <li class="flex items-center">
-            <a class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
-              href="https://github.com/agnesia-lubuk">
-              <!-- Icon -->
-              <i class="lg:text-gray-300 text-gray-500 fab fa-github text-lg leading-lg "></i>
-              <span class="lg:hidden inline-block ml-2">Star</span>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-  <!-- End of Navigation -->
-
-  <!-- Splash Page -->
-  <main>
-    <div class="relative pt-16 pb-32 flex content-center items-center justify-center" style="min-height: 75vh;">
-      <!-- Background Image -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/creativetimofficial/tailwind-starter-kit/compiled-tailwind.min.css"
+    />
+  </head>
+  <body class="text-gray-800 antialiased">
+    <!-- Navigation -->
+    <nav
+      class="top-0 absolute z-50 w-full flex flex-wrap items-center justify-between px-2 py-3 navbar-expand-lg"
+    >
       <div
-        class="img-fluid absolute top-0 w-full h-full bg-center bg-cover"
-        style="background: url(https://static.wixstatic.com/media/848e88_c2bdbcc1c17e4eca88817907257e8f12~mv2_d_5043_3379_s_4_2.jpg/v1/fill/w_1905,h_750,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/848e88_c2bdbcc1c17e4eca88817907257e8f12~mv2_d_5043_3379_s_4_2.jpg);">
-        <!-- Overlay -->
-        <span id="blackOverlay" class="w-full h-full absolute opacity-75 bg-black"></span>
+        class="container px-4 mx-auto flex flex-wrap items-center justify-between"
+      >
+        <!-- Nav Left Side -->
+        <div
+          class="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start"
+        >
+          <a
+            class="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-no-wrap uppercase text-white"
+            href="https://l.facebook.com/l.php?u=https%3A%2F%2Fagnesialubuk.wixsite.com%2Fportfolio%3Ffbclid%3DIwAR0Fu8LL-JZtd1BpZxl-eLMdkrjnJqm5aTEEFvZRlE4xTsWbnXo3CFXwlsg&h=AT1uK_NtHUMx_R3ZGpH2hn6ezNjucs29gnvJVTLEeGMXRdh-SRkYvmuRxNlQAuEcpsJ16ovvR-N643KfTyXOIrYxlIGYlqSSVwabWBL5y3bfHJYiDlf_Iq6XifTgWTLXo0j4-QQr"
+          >
+            <!-- Nav Title -->
+            APL Photography
+          </a>
+          <!-- Hamburger Menu (Mobile) -->
+          <button
+            class="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
+            type="button"
+            onclick="toggleNavbar('example-collapse-navbar')"
+          >
+            <!-- Icon -->
+            <i class="text-white fas fa-bars"></i>
+          </button>
+        </div>
+        <!-- Nav Flex Row -->
+        <div
+          class="lg:flex flex-grow items-center bg-white lg:bg-transparent lg:shadow-none hidden"
+          id="example-collapse-navbar"
+        >
+          <!-- Nav Right Side -->
+          <ul class="flex flex-col lg:flex-row list-none lg:ml-auto">
+            <!-- Social Media Button -->
+            <li class="flex items-center">
+              <a
+                class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+                href="https://www.facebook.com/AgnesiaLubukPhotography"
+              >
+                <!-- Icon -->
+                <i
+                  class="lg:text-gray-300 text-gray-500 fab fa-facebook text-lg leading-lg"
+                ></i>
+                <span class="lg:hidden inline-block ml-2">Facebook</span>
+              </a>
+            </li>
+            <!-- Social Media Button -->
+            <li class="flex items-center">
+              <a
+                class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+                href="https://www.instagram.com/agnesia_lubuk_photography/"
+              >
+                <!-- Icon -->
+                <i
+                  class="lg:text-gray-300 text-gray-500 fab fa-instagram text-lg leading-lg"
+                ></i>
+                <span class="lg:hidden inline-block ml-2">Instagram</span>
+              </a>
+            </li>
+            <!-- Social Media Button -->
+            <li class="flex items-center">
+              <a
+                class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+                href="https://github.com/agnesia-lubuk"
+              >
+                <!-- Icon -->
+                <i
+                  class="lg:text-gray-300 text-gray-500 fab fa-github text-lg leading-lg"
+                ></i>
+                <span class="lg:hidden inline-block ml-2">Github</span>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
-      <!-- Text Over Main Background -->
-      <div class="container relative mx-auto">
-        <div class="items-center flex flex-wrap">
-          <div class="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
-            <div class="pr-12">
-              <h1 class="text-white font-semibold text-5xl" data-aos="fade-up">
-                Welcome your epiphany.
-              </h1>
-              <p class="mt-4 text-lg text-gray-300" data-aos="fade-right" data-aos-delay="1000">
-                Lorem ipsum dolor sit. Eum totam aspernatur aliquam praesentium aperiam magni, dignissimos, atque incidunt fuga nulla distinctio eligendi enim placeat nesciunt, soluta maxime nihil ipsa minus!
+    </nav>
+    <!-- End of Navigation -->
+
+    <!-- Splash Page -->
+    <main>
+      <div
+        class="relative pt-16 pb-32 flex content-center items-center justify-center"
+        style="min-height: 75vh"
+      >
+        <!-- Background Image -->
+        <div
+          class="img-fluid absolute top-0 w-full h-full bg-center bg-cover"
+          style="
+            background: url(https://static.wixstatic.com/media/848e88_c2bdbcc1c17e4eca88817907257e8f12~mv2_d_5043_3379_s_4_2.jpg/v1/fill/w_1905,h_750,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/848e88_c2bdbcc1c17e4eca88817907257e8f12~mv2_d_5043_3379_s_4_2.jpg);
+          "
+        >
+          <!-- Overlay -->
+          <span
+            id="blackOverlay"
+            class="w-full h-full absolute opacity-75 bg-black"
+          ></span>
+        </div>
+        <!-- Text Over Main Background -->
+        <div class="container relative mx-auto">
+          <div class="items-center flex flex-wrap">
+            <div class="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
+              <div class="pr-12">
+                <h1
+                  class="text-white font-semibold text-5xl"
+                  data-aos="fade-up"
+                >
+                  Welcome your epiphany.
+                </h1>
+                <p
+                  class="mt-4 text-lg text-gray-300"
+                  data-aos="fade-right"
+                  data-aos-delay="1000"
+                >
+                  Lorem ipsum dolor sit. Eum totam aspernatur aliquam
+                  praesentium aperiam magni, dignissimos, atque incidunt fuga
+                  nulla distinctio eligendi enim placeat nesciunt, soluta maxime
+                  nihil ipsa minus!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Making Polygon Shape in Background -->
+        <div
+          class="top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden"
+          style="height: 70px; transform: translateZ(0)"
+        >
+          <svg
+            class="absolute bottom-0 overflow-hidden"
+            xmlns="http://www.w3.org/2000/svg"
+            preserveAspectRatio="none"
+            version="1.1"
+            viewBox="0 0 2560 100"
+            x="0"
+            y="0"
+          >
+            <polygon
+              class="text-gray-300 fill-current"
+              points="2560 0 2560 100 0 100"
+            ></polygon>
+          </svg>
+        </div>
+      </div>
+      <!-- End of Splash Page -->
+
+      <!-- Services Section -->
+      <section class="pb-20 bg-gray-300 -mt-24">
+        <!-- 3 Card Section -->
+        <div class="container mx-auto px-4">
+          <div class="flex flex-wrap">
+            <!-- Card -->
+            <div
+              class="lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center"
+              data-aos="fade-right"
+              data-aos-delay="1200"
+            >
+              <div
+                class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg"
+              >
+                <div class="px-4 py-5 flex-auto">
+                  <div
+                    class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-red-400"
+                  >
+                    <!-- Icon -->
+                    <i class="fas fa-robot"></i>
+                  </div>
+                  <!-- Text Box -->
+                  <h6 class="text-xl font-semibold">I'm A Robot</h6>
+                  <p class="mt-2 mb-4 text-gray-600">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quas voluptatibus autem maxime expedita aspernatur tempora.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Card -->
+            <div
+              class="w-full md:w-4/12 px-4 text-center"
+              data-aos="fade-up"
+              data-aos-delay="1400"
+            >
+              <div
+                class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg"
+              >
+                <div class="px-4 py-5 flex-auto">
+                  <div
+                    class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-blue-400"
+                  >
+                    <!-- Icon -->
+                    <i class="fas fa-atom"></i>
+                  </div>
+                  <!-- Text Box -->
+                  <h6 class="text-xl font-semibold">Atom Power</h6>
+                  <p class="mt-2 mb-4 text-gray-600">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Assumenda quia nemo ex aut temporibus, in molestiae earum
+                    ratione.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Card -->
+            <div
+              class="pt-6 w-full md:w-4/12 px-4 text-center"
+              data-aos="fade-left"
+              data-aos-delay="1600"
+            >
+              <div
+                class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg"
+              >
+                <div class="px-4 py-5 flex-auto">
+                  <div
+                    class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-green-400"
+                  >
+                    <!-- Icon -->
+                    <i class="fas fa-bolt"></i>
+                  </div>
+                  <!-- Text Box -->
+                  <h6 class="text-xl font-semibold">Infinite Energy</h6>
+                  <p class="mt-2 mb-4 text-gray-600">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Laudantium ipsa veritatis error ratione sunt repudiandae,
+                    quasi atque.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Text Box and Card Container -->
+          <div class="flex flex-wrap items-center mt-32">
+            <!-- Text Box Container -->
+            <div
+              class="w-full md:w-5/12 px-4 mr-auto ml-auto"
+              data-aos="zoom-in-right"
+            >
+              <!-- Text Box -->
+              <div
+                class="text-gray-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-gray-100"
+              >
+                <!-- Icon -->
+                <i class="fas fa-star text-xl"></i>
+              </div>
+              <h3 class="text-3xl mb-2 font-semibold leading-normal">
+                Trying New Things is Great!
+              </h3>
+              <p
+                class="text-lg font-light leading-relaxed mt-4 mb-4 text-gray-700"
+              >
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Officiis, dolores? Saepe aspernatur necessitatibus explicabo.
+              </p>
+              <p
+                class="text-lg font-light leading-relaxed mt-0 mb-4 text-gray-700"
+              >
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. At
+                repellat obcaecati tenetur officia distinctio! A voluptates
+                numquam, neque libero molestiae natus facere temporibus!
+              </p>
+              <a
+                href="https://www.creative-tim.com/framework/tailwind-starter-kit"
+                class="font-bold text-gray-800 mt-8"
+                >Check Tailwind Starter Kit!
+              </a>
+            </div>
+
+            <!-- Image Cap & Text Card -->
+            <div
+              class="w-full md:w-4/12 px-4 mr-auto ml-auto"
+              data-aos="flip-left"
+              data-aos-delay="1000"
+            >
+              <div
+                class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg bg-orange-500"
+              >
+                <!-- Image -->
+                <img
+                  alt="..."
+                  src="/images/audrey2.png"
+                  class="w-full align-middle rounded-t-lg"
+                />
+                <blockquote class="relative p-8 mb-4">
+                  <!-- Making Polygon Shape in Card -->
+                  <svg
+                    preserveAspectRatio="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 583 95"
+                    class="absolute left-0 w-full block"
+                    style="height: 95px; top: -94px"
+                  >
+                    <polygon
+                      points="-30,95 583,95 583,65"
+                      class="text-orange-500 fill-current"
+                    ></polygon>
+                  </svg>
+                  <!-- Text Box -->
+                  <h4 class="text-xl font-bold text-white">
+                    More Than Meets The Eye
+                  </h4>
+                  <p class="text-md font-light mt-2 text-white">
+                    I feel like I've mentioned before that I'm a robot and that
+                    continues to be true, even to this day.
+                  </p>
+                </blockquote>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End of Services Section -->
+
+      <!-- About Section -->
+      <section class="relative py-20">
+        <!-- Making Polygon Shape in Background -->
+        <div
+          class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
+          style="height: 80px; transform: translateZ(0)"
+        >
+          <svg
+            class="absolute bottom-0 overflow-hidden"
+            xmlns="http://www.w3.org/2000/svg"
+            preserveAspectRatio="none"
+            version="1.1"
+            viewBox="0 0 2560 100"
+            x="0"
+            y="0"
+          >
+            <polygon
+              class="text-white fill-current"
+              points="2560 0 2560 100 0 100"
+            ></polygon>
+          </svg>
+        </div>
+        <!-- Section Container -->
+        <div class="container mx-auto px-4">
+          <div class="items-center flex flex-wrap">
+            <div
+              class="w-full md:w-4/12 ml-auto mr-auto px-4"
+              data-aos="flip-right"
+              data-aos-delay="1000"
+            >
+              <!-- Image -->
+              <img
+                alt="..."
+                class="max-w-full rounded-lg shadow-lg"
+                src="/images/alex2.png"
+              />
+            </div>
+            <!-- Text Box Container-->
+            <div
+              class="w-full md:w-5/12 ml-auto mr-auto px-4"
+              data-aos="zoom-in-left"
+            >
+              <div class="md:pr-12">
+                <div
+                  class="text-pink-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-pink-300"
+                >
+                  <!-- Icon -->
+                  <i class="fas fa-rocket text-xl"></i>
+                </div>
+                <!-- Text Box -->
+                <h3 class="text-3xl font-semibold">A growing company</h3>
+                <p class="mt-4 text-lg leading-relaxed text-gray-600">
+                  The extension comes with three pre-built pages to help you get
+                  started faster. You can change the text and images and you're
+                  good to go.
+                </p>
+                <!-- List -->
+                <ul class="list-none mt-6">
+                  <li class="py-2">
+                    <div class="flex items-center">
+                      <div>
+                        <span
+                          class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 bg-pink-200 mr-3"
+                        >
+                          <!-- Icon -->
+                          <i class="fas fa-fingerprint"></i>
+                        </span>
+                      </div>
+                      <div>
+                        <h4 class="text-gray-600">
+                          Carefully crafted components
+                        </h4>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="py-2">
+                    <div class="flex items-center">
+                      <div>
+                        <span
+                          class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 bg-pink-200 mr-3"
+                        >
+                          <!-- Icon -->
+                          <i class="fab fa-html5"></i>
+                        </span>
+                      </div>
+                      <div>
+                        <h4 class="text-gray-600">Amazing page examples</h4>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="py-2">
+                    <div class="flex items-center">
+                      <div>
+                        <span
+                          class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 bg-pink-200 mr-3"
+                        >
+                          <!-- Icon -->
+                          <i class="far fa-paper-plane"></i>
+                        </span>
+                      </div>
+                      <div>
+                        <h4 class="text-gray-600">Dynamic components</h4>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End of About Section -->
+
+      <!-- Team Section -->
+      <section class="pt-20 pb-48">
+        <!-- Section Container -->
+        <div class="container mx-auto px-4">
+          <!-- Text Box -->
+          <div class="flex flex-wrap justify-center text-center mb-24">
+            <div class="w-full lg:w-6/12 px-4">
+              <h2 class="text-4xl font-semibold">Here are our heroes</h2>
+              <p class="text-lg leading-relaxed m-4 text-gray-600">
+                According to the National Oceanic and Atmospheric
+                Administration, Ted, Scambos, NSIDClead scentist, puts the
+                potentially record maximum.
+              </p>
+            </div>
+          </div>
+          <!-- Flex Row Container -->
+          <div class="flex flex-wrap">
+            <!-- Item -->
+            <div
+              class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4"
+              data-aos="fade-in"
+            >
+              <div class="px-6">
+                <!-- Image -->
+                <img
+                  alt="..."
+                  src="https://randomuser.me/api/portraits/men/11.jpg"
+                  class="shadow-lg rounded-full max-w-full mx-auto"
+                  style="max-width: 120px"
+                />
+                <div class="pt-6 text-center">
+                  <h5 class="text-xl font-bold">Ryan Thompson</h5>
+                  <p class="mt-1 text-sm text-gray-500 uppercase font-semibold">
+                    Web Developer
+                  </p>
+                  <!-- Social Media Buttons -->
+                  <div class="mt-6">
+                    <button
+                      class="bg-blue-400 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                      type="button"
+                    >
+                      <!-- Icon -->
+                      <i class="fab fa-twitter"></i>
+                    </button>
+                    <button
+                      class="bg-blue-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                      type="button"
+                    >
+                      <!-- Icon -->
+                      <i class="fab fa-facebook-f"></i>
+                    </button>
+                    <button
+                      class="bg-pink-500 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                      type="button"
+                    >
+                      <!-- Icon -->
+                      <i class="fab fa-dribbble"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Item -->
+            <div
+              class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4"
+              data-aos="fade-in"
+              data-aos-delay="400"
+            >
+              <div class="px-6">
+                <!-- Image -->
+                <img
+                  alt="..."
+                  src="https://randomuser.me/api/portraits/women/79.jpg"
+                  class="shadow-lg rounded-full max-w-full mx-auto"
+                  style="max-width: 120px"
+                />
+                <div class="pt-6 text-center">
+                  <h5 class="text-xl font-bold">Romina Hadid</h5>
+                  <p class="mt-1 text-sm text-gray-500 uppercase font-semibold">
+                    Marketing Specialist
+                  </p>
+                  <!-- Social Media Buttons -->
+                  <div class="mt-6">
+                    <button
+                      class="bg-red-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                      type="button"
+                    >
+                      <!-- Icon -->
+                      <i class="fab fa-google"></i>
+                    </button>
+                    <button
+                      class="bg-blue-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                      type="button"
+                    >
+                      <!-- Icon -->
+                      <i class="fab fa-facebook-f"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Item -->
+            <div
+              class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4"
+              data-aos="fade-in"
+              data-aos-delay="600"
+            >
+              <div class="px-6">
+                <!-- Image -->
+                <img
+                  alt="..."
+                  src="https://randomuser.me/api/portraits/women/90.jpg"
+                  class="shadow-lg rounded-full max-w-full mx-auto"
+                  style="max-width: 120px"
+                />
+                <div class="pt-6 text-center">
+                  <h5 class="text-xl font-bold">Alexa Smith</h5>
+                  <p class="mt-1 text-sm text-gray-500 uppercase font-semibold">
+                    UI/UX Designer
+                  </p>
+                  <!-- Social Media Buttons -->
+                  <div class="mt-6">
+                    <button
+                      class="bg-red-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                      type="button"
+                    >
+                      <!-- Icon -->
+                      <i class="fab fa-google"></i>
+                    </button>
+                    <button
+                      class="bg-blue-400 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                      type="button"
+                    >
+                      <!-- Icon -->
+                      <i class="fab fa-twitter"></i>
+                    </button>
+                    <button
+                      class="bg-gray-800 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                      type="button"
+                    >
+                      <!-- Icon -->
+                      <i class="fab fa-instagram"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Item -->
+            <div
+              class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4"
+              data-aos="fade-in"
+              data-aos-delay="800"
+            >
+              <div class="px-6">
+                <!-- Image -->
+                <img
+                  alt="..."
+                  src="data:image/jpeg;base64,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"
+                  class="shadow-lg rounded-full max-w-full mx-auto"
+                  style="max-width: 120px"
+                />
+                <div class="pt-6 text-center">
+                  <h5 class="text-xl font-bold">Agnesia Lubuk</h5>
+                  <p class="mt-1 text-sm text-gray-500 uppercase font-semibold">
+                    Founder and CEO
+                  </p>
+                  <!-- Social Media Buttons -->
+                  <div class="mt-6">
+                    <button
+                      class="bg-pink-500 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                      type="button"
+                    >
+                      <!-- Icon -->
+                      <i class="fab fa-dribbble"></i>
+                    </button>
+                    <button
+                      class="bg-red-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                      type="button"
+                    >
+                      <!-- Icon -->
+                      <i class="fab fa-google"></i>
+                    </button>
+                    <button
+                      class="bg-blue-400 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                      type="button"
+                    >
+                      <!-- Icon -->
+                      <i class="fab fa-twitter"></i>
+                    </button>
+                    <button
+                      class="bg-gray-800 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                      type="button"
+                    >
+                      <!-- Icon -->
+                      <i class="fab fa-instagram"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End of Team Section -->
+
+      <!-- Contact Section -->
+      <section class="pb-20 relative block bg-gray-900">
+        <!-- Making Polygon Shape in Background -->
+        <div
+          class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
+          style="height: 80px; transform: translateZ(0)"
+        >
+          <svg
+            class="absolute bottom-0 overflow-hidden"
+            xmlns="http://www.w3.org/2000/svg"
+            preserveAspectRatio="none"
+            version="1.1"
+            viewBox="0 0 2560 100"
+            x="0"
+            y="0"
+          >
+            <polygon
+              class="text-gray-900 fill-current"
+              points="2560 0 2560 100 0 100"
+            ></polygon>
+          </svg>
+        </div>
+        <!-- Section Container -->
+        <div class="container mx-auto px-4 lg:pt-24 lg:pb-64">
+          <!-- Text Box -->
+          <div class="flex flex-wrap text-center justify-center">
+            <div class="w-full lg:w-6/12 px-4">
+              <h2 class="text-4xl font-semibold text-white">Build something</h2>
+              <p class="text-lg leading-relaxed mt-4 mb-4 text-gray-500">
+                Put the potentially record low maximum sea ice extent tihs year
+                down to low ice. According to the National Oceanic and
+                Atmospheric Administration, Ted, Scambos.
+              </p>
+            </div>
+          </div>
+          <!-- Flex Row Container -->
+          <div class="flex flex-wrap mt-12 justify-center">
+            <!-- Item -->
+            <div
+              class="w-full lg:w-3/12 px-4 text-center"
+              data-aos="fade-in"
+              data-aos-delay="600"
+            >
+              <div
+                class="text-gray-900 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center"
+              >
+                <!-- Icon -->
+                <i class="fas fa-medal text-xl"></i>
+              </div>
+              <!-- Text Box -->
+              <h5 class="text-xl mt-5 font-semibold text-white">
+                Excelent Services
+              </h5>
+              <p class="mt-2 mb-4 text-gray-500">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+            <!-- Item -->
+            <div
+              class="w-full lg:w-3/12 px-4 text-center"
+              data-aos="fade-in"
+              data-aos-delay="400"
+            >
+              <div
+                class="text-gray-900 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center"
+              >
+                <!-- Icon -->
+                <i class="fas fa-poll text-xl"></i>
+              </div>
+              <!-- Text Box -->
+              <h5 class="text-xl mt-5 font-semibold text-white">
+                Grow your market
+              </h5>
+              <p class="mt-2 mb-4 text-gray-500">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+            <!-- Item -->
+            <div class="w-full lg:w-3/12 px-4 text-center" data-aos="fade-in">
+              <div
+                class="text-gray-900 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center"
+              >
+                <!-- Icon -->
+                <i class="fas fa-lightbulb text-xl"></i>
+              </div>
+              <!-- Text Box -->
+              <h5 class="text-xl mt-5 font-semibold text-white">Launch time</h5>
+              <p class="mt-2 mb-4 text-gray-500">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
               </p>
             </div>
           </div>
         </div>
-      </div>
+      </section>
+      <!-- Contact Form -->
+      <section class="relative block py-24 lg:pt-0 bg-gray-900">
+        <!-- Container -->
+        <div class="container mx-auto px-4" data-aos="fade-in">
+          <div class="flex flex-wrap justify-center lg:-mt-64 -mt-48">
+            <div class="w-full lg:w-6/12 px-4">
+              <div
+                class="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-gray-300"
+              >
+                <div class="flex-auto p-5 lg:p-10">
+                  <h4 class="text-2xl font-semibold">Want to work with us?</h4>
+                  <p class="leading-relaxed mt-1 mb-4 text-gray-600">
+                    Complete this form and we will get back to you in 24 hours.
+                  </p>
+                  <!-- Name -->
+                  <div class="relative w-full mb-3 mt-8">
+                    <label
+                      class="block uppercase text-gray-700 text-xs font-bold mb-2"
+                      for="full-name"
+                    >
+                      Full Name </label
+                    ><input
+                      type="text"
+                      class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
+                      placeholder="Full Name"
+                      style="transition: all 0.15s ease 0s"
+                    />
+                  </div>
+                  <!-- Email -->
+                  <div class="relative w-full mb-3">
+                    <label
+                      class="block uppercase text-gray-700 text-xs font-bold mb-2"
+                      for="email"
+                    >
+                      Email </label
+                    ><input
+                      type="email"
+                      class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
+                      placeholder="Email"
+                      style="transition: all 0.15s ease 0s"
+                    />
+                  </div>
+                  <!-- Message -->
+                  <div class="relative w-full mb-3">
+                    <label
+                      class="block uppercase text-gray-700 text-xs font-bold mb-2"
+                      for="message"
+                    >
+                      Message </label
+                    ><textarea
+                      rows="4"
+                      cols="80"
+                      class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
+                      placeholder="Type a message..."
+                    ></textarea>
+                  </div>
+                  <div class="text-center mt-6">
+                    <button
+                      class="bg-gray-900 text-white active:bg-gray-700 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1"
+                      type="button"
+                      style="transition: all 0.15s ease 0s"
+                    >
+                      Send Message
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End of Contact Section -->
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="relative bg-gray-300 pt-8 pb-6">
       <!-- Making Polygon Shape in Background -->
       <div
-        class="top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden"
-        style="height: 70px; transform: translateZ(0);"
+        class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
+        style="height: 80px; transform: translateZ(0)"
       >
         <svg
           class="absolute bottom-0 overflow-hidden"
@@ -111,652 +845,145 @@
           ></polygon>
         </svg>
       </div>
-    </div>
-    <!-- End of Splash Page -->
-
-    <!-- Services Section -->
-    <section class="pb-20 bg-gray-300 -mt-24">
-      <!-- 3 Card Section -->
+      <!-- Section Container -->
       <div class="container mx-auto px-4">
+        <!-- Text Box Container -->
         <div class="flex flex-wrap">
-          <!-- Card -->
-          <div class="lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center" data-aos="fade-right" data-aos-delay="1200">
-            <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
-              <div class="px-4 py-5 flex-auto">
-                <div class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-red-400">
-                  <!-- Icon -->
-                  <i class="fas fa-robot"></i>
-                </div>
-                <!-- Text Box -->
-                <h6 class="text-xl font-semibold">I'm A Robot</h6>
-                <p class="mt-2 mb-4 text-gray-600">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas voluptatibus autem maxime expedita aspernatur tempora.
-                </p>
-              </div>
+          <div class="w-full lg:w-6/12 px-4">
+            <h4 class="text-3xl font-semibold">Let's keep in touch!</h4>
+            <h5 class="text-lg mt-0 mb-2 text-gray-700">
+              Find us on any of these platforms, we respond 1-2 business days.
+            </h5>
+            <!-- Social Media Buttons -->
+            <div class="mt-6">
+              <a href="https://www.twitter.com/creativetim" target="_blank"
+                ><i
+                  class="fab fa-twitter bg-white text-blue-400 shadow-lg font-lg p-3 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 inline-block text-center"
+                ></i
+              ></a>
+              <a href="https://www.facebook.com/creativetim" target="_blank"
+                ><i
+                  class="fab fa-facebook-square bg-white text-blue-600 shadow-lg font-lg p-3 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 inline-block text-center"
+                ></i
+              ></a>
+              <a href="https://www.dribbble.com/creativetim" target="_blank"
+                ><i
+                  class="fab fa-dribbble bg-white text-pink-400 shadow-lg font-lg p-3 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 inline-block text-center"
+                ></i
+              ></a>
+              <a
+                href="https://www.github.com/creativetimofficial"
+                target="_blank"
+                ><i
+                  class="fab fa-github bg-white text-gray-900 shadow-lg font-lg p-3 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 inline-block text-center"
+                ></i
+              ></a>
             </div>
           </div>
-          <!-- Card -->
-          <div class="w-full md:w-4/12 px-4 text-center" data-aos="fade-up" data-aos-delay="1400">
-            <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
-              <div class="px-4 py-5 flex-auto">
-                <div class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-blue-400">
-                  <!-- Icon -->
-                  <i class="fas fa-atom"></i>
-                </div>
-                <!-- Text Box -->
-                <h6 class="text-xl font-semibold">Atom Power</h6>
-                <p class="mt-2 mb-4 text-gray-600">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda quia nemo ex aut temporibus, in molestiae earum ratione.
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- Card -->
-          <div class="pt-6 w-full md:w-4/12 px-4 text-center" data-aos="fade-left" data-aos-delay="1600">
-            <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
-              <div class="px-4 py-5 flex-auto">
-                <div class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-green-400">
-                  <!-- Icon -->
-                  <i class="fas fa-bolt"></i>
-                </div>
-                <!-- Text Box -->
-                <h6 class="text-xl font-semibold">Infinite Energy</h6>
-                <p class="mt-2 mb-4 text-gray-600">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium ipsa veritatis error ratione sunt repudiandae, quasi atque.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Text Box and Card Container -->
-        <div class="flex flex-wrap items-center mt-32">
-          <!-- Text Box Container -->
-          <div class="w-full md:w-5/12 px-4 mr-auto ml-auto" data-aos="zoom-in-right">
-            <!-- Text Box -->
-            <div class="text-gray-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-gray-100">
-              <!-- Icon -->
-              <i class="fas fa-star text-xl"></i>
-            </div>
-            <h3 class="text-3xl mb-2 font-semibold leading-normal">
-              Trying New Things is Great!
-            </h3>
-            <p class="text-lg font-light leading-relaxed mt-4 mb-4 text-gray-700">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, dolores? Saepe aspernatur necessitatibus explicabo.
-            </p>
-            <p class="text-lg font-light leading-relaxed mt-0 mb-4 text-gray-700">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. At repellat obcaecati tenetur officia distinctio! A voluptates numquam, neque libero molestiae natus facere temporibus!
-            </p>
-            <a
-              href="https://www.creative-tim.com/framework/tailwind-starter-kit"
-              class="font-bold text-gray-800 mt-8"
-              >Check Tailwind Starter Kit!
-            </a>
-          </div>
-
-          <!-- Image Cap & Text Card -->
-          <div class="w-full md:w-4/12 px-4 mr-auto ml-auto" data-aos="flip-left" data-aos-delay="1000">
-            <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg bg-orange-500">
-              <!-- Image -->
-              <img
-                alt="..."
-                src="/images/audrey2.png"
-                class="w-full align-middle rounded-t-lg"
-              />
-              <blockquote class="relative p-8 mb-4">
-                <!-- Making Polygon Shape in Card -->
-                <svg
-                  preserveAspectRatio="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 583 95"
-                  class="absolute left-0 w-full block"
-                  style="height: 95px; top: -94px;"
+          <!-- List Container -->
+          <div class="w-full lg:w-6/12 px-4">
+            <div class="flex flex-wrap items-top mb-6">
+              <!-- List 1 -->
+              <div class="w-full lg:w-4/12 px-4 ml-auto">
+                <span
+                  class="block uppercase text-gray-600 text-sm font-semibold mb-2"
+                  >Useful Links</span
                 >
-                  <polygon
-                    points="-30,95 583,95 583,65"
-                    class="text-orange-500 fill-current"
-                  ></polygon>
-                </svg>
-                <!-- Text Box -->
-                <h4 class="text-xl font-bold text-white">
-                  More Than Meets The Eye
-                </h4>
-                <p class="text-md font-light mt-2 text-white">
-                  I feel like I've mentioned before that I'm a robot and that continues to be true, even to this day.
-                </p>
-              </blockquote>
+                <ul class="list-unstyled">
+                  <li>
+                    <a
+                      class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                      href="https://www.creative-tim.com/presentation"
+                      >About Us</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                      href="https://blog.creative-tim.com"
+                      >Blog</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                      href="https://www.github.com/creativetimofficial"
+                      >Github</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                      href="https://www.creative-tim.com/bootstrap-themes/free"
+                      >Free Products</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <!-- List 2 -->
+              <div class="w-full lg:w-4/12 px-4">
+                <span
+                  class="block uppercase text-gray-600 text-sm font-semibold mb-2"
+                  >Other Resources</span
+                >
+                <ul class="list-unstyled">
+                  <li>
+                    <a
+                      class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                      href="https://github.com/creativetimofficial/argon-design-system/blob/master/LICENSE.md"
+                      >MIT License</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                      href="https://creative-tim.com/terms"
+                      >Terms &amp; Conditions</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                      href="https://creative-tim.com/privacy"
+                      >Privacy Policy</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                      href="https://creative-tim.com/contact-us"
+                      >Contact Us</a
+                    >
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <!-- End of Services Section -->
-
-    <!-- About Section -->
-    <section class="relative py-20">
-      <!-- Making Polygon Shape in Background -->
-      <div
-        class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
-        style="height: 80px; transform: translateZ(0);"
-      >
-        <svg
-          class="absolute bottom-0 overflow-hidden"
-          xmlns="http://www.w3.org/2000/svg"
-          preserveAspectRatio="none"
-          version="1.1"
-          viewBox="0 0 2560 100"
-          x="0"
-          y="0"
+        <!-- Line Break -->
+        <hr class="my-6 border-gray-400" />
+        <!-- Footer Text -->
+        <div
+          class="flex flex-wrap items-center md:justify-between justify-center"
         >
-          <polygon
-            class="text-white fill-current"
-            points="2560 0 2560 100 0 100"
-          ></polygon>
-        </svg>
-      </div>
-      <!-- Section Container -->
-      <div class="container mx-auto px-4">
-        <div class="items-center flex flex-wrap" >
-          <div class="w-full md:w-4/12 ml-auto mr-auto px-4" data-aos="flip-right" data-aos-delay="1000"> 
-            <!-- Image -->
-            <img
-              alt="..."
-              class="max-w-full rounded-lg shadow-lg"
-              src="/images/alex2.png"
-            />
-          </div>
-          <!-- Text Box Container-->
-          <div class="w-full md:w-5/12 ml-auto mr-auto px-4" data-aos="zoom-in-left">
-            <div class="md:pr-12">
-              <div class="text-pink-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-pink-300">
-                <!-- Icon -->
-                <i class="fas fa-rocket text-xl"></i>
-              </div>
-              <!-- Text Box -->
-              <h3 class="text-3xl font-semibold">A growing company</h3>
-              <p class="mt-4 text-lg leading-relaxed text-gray-600">
-                The extension comes with three pre-built pages to help you get
-                started faster. You can change the text and images and you're
-                good to go.
-              </p>
-              <!-- List -->
-              <ul class="list-none mt-6">
-                <li class="py-2">
-                  <div class="flex items-center">
-                    <div>
-                      <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 bg-pink-200 mr-3">
-                        <!-- Icon -->
-                        <i class="fas fa-fingerprint"></i>
-                      </span>
-                    </div>
-                    <div>
-                      <h4 class="text-gray-600">
-                        Carefully crafted components
-                      </h4>
-                    </div>
-                  </div>
-                </li>
-                <li class="py-2">
-                  <div class="flex items-center">
-                    <div>
-                      <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 bg-pink-200 mr-3">
-                        <!-- Icon -->
-                        <i class="fab fa-html5"></i>
-                      </span>
-                    </div>
-                    <div>
-                      <h4 class="text-gray-600">Amazing page examples</h4>
-                    </div>
-                  </div>
-                </li>
-                <li class="py-2">
-                  <div class="flex items-center">
-                    <div>
-                      <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 bg-pink-200 mr-3">
-                        <!-- Icon -->
-                        <i class="far fa-paper-plane"></i>
-                      </span>
-                    </div>
-                    <div>
-                      <h4 class="text-gray-600">Dynamic components</h4>
-                    </div>
-                  </div>
-                </li>
-              </ul>
+          <div class="w-full md:w-4/12 px-4 mx-auto text-center">
+            <div class="text-sm text-gray-600 font-semibold py-1">
+              Copyright © 2019 Tailwind Starter Kit by
+              <a
+                href="https://www.creative-tim.com"
+                class="text-gray-600 hover:text-gray-900"
+                >Creative Tim</a
+              >.
             </div>
           </div>
         </div>
       </div>
-    </section>
-    <!-- End of About Section -->
-
-    <!-- Team Section -->
-    <section class="pt-20 pb-48">
-      <!-- Section Container -->
-      <div class="container mx-auto px-4">
-        <!-- Text Box -->
-        <div class="flex flex-wrap justify-center text-center mb-24">
-          <div class="w-full lg:w-6/12 px-4">
-            <h2 class="text-4xl font-semibold">Here are our heroes</h2>
-            <p class="text-lg leading-relaxed m-4 text-gray-600">
-              According to the National Oceanic and Atmospheric
-              Administration, Ted, Scambos, NSIDClead scentist, puts the
-              potentially record maximum.
-            </p>
-          </div>
-        </div>
-        <!-- Flex Row Container -->
-        <div class="flex flex-wrap">
-          <!-- Item -->
-          <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
-            <div class="px-6">
-              <!-- Image -->
-              <img
-                alt="..."
-                src="https://randomuser.me/api/portraits/men/11.jpg"               
-                class="shadow-lg rounded-full max-w-full mx-auto"
-                style="max-width: 120px;"
-              />
-              <div class="pt-6 text-center">
-                <h5 class="text-xl font-bold">Ryan Thompson</h5>
-                <p class="mt-1 text-sm text-gray-500 uppercase font-semibold">
-                  Web Developer
-                </p>
-                <!-- Social Media Buttons -->
-                <div class="mt-6">
-                  <button class="bg-blue-400 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1" type="button">
-                    <!-- Icon -->
-                    <i class="fab fa-twitter"></i>
-                  </button>
-                  <button class="bg-blue-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1" type="button">
-                    <!-- Icon -->
-                    <i class="fab fa-facebook-f"></i>
-                  </button>
-                  <button class="bg-pink-500 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1" type="button">
-                    <!-- Icon -->
-                    <i class="fab fa-dribbble"></i>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Item -->
-          <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
-            <div class="px-6">
-              <!-- Image -->
-              <img
-                alt="..."
-                src="https://randomuser.me/api/portraits/women/79.jpg"
-                class="shadow-lg rounded-full max-w-full mx-auto"
-                style="max-width: 120px;"
-              />
-              <div class="pt-6 text-center">
-                <h5 class="text-xl font-bold">Romina Hadid</h5>
-                <p class="mt-1 text-sm text-gray-500 uppercase font-semibold">
-                  Marketing Specialist
-                </p>
-                <!-- Social Media Buttons -->
-                <div class="mt-6">
-                  <button class="bg-red-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1" type="button">
-                    <!-- Icon -->
-                    <i class="fab fa-google"></i>
-                  </button>
-                  <button class="bg-blue-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1" type="button">
-                    <!-- Icon -->
-                    <i class="fab fa-facebook-f"></i>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Item -->
-          <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
-            <div class="px-6">
-              <!-- Image -->
-              <img
-                alt="..."
-                src="https://randomuser.me/api/portraits/women/90.jpg"
-                class="shadow-lg rounded-full max-w-full mx-auto"
-                style="max-width: 120px;"
-              />
-              <div class="pt-6 text-center">
-                <h5 class="text-xl font-bold">Alexa Smith</h5>
-                <p class="mt-1 text-sm text-gray-500 uppercase font-semibold">
-                  UI/UX Designer
-                </p>
-                <!-- Social Media Buttons -->
-                <div class="mt-6">
-                  <button class="bg-red-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1" type="button">
-                    <!-- Icon -->
-                    <i class="fab fa-google"></i>
-                  </button>
-                  <button class="bg-blue-400 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1" type="button">
-                    <!-- Icon -->
-                    <i class="fab fa-twitter"></i>
-                  </button>
-                  <button class="bg-gray-800 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1" type="button">
-                    <!-- Icon -->
-                    <i class="fab fa-instagram"></i>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Item -->
-          <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
-            <div class="px-6">
-              <!-- Image -->
-              <img
-                alt="..."
-                src="data:image/jpeg;base64,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"
-                class="shadow-lg rounded-full max-w-full mx-auto"
-                style="max-width: 120px;"
-              />
-              <div class="pt-6 text-center">
-                <h5 class="text-xl font-bold">Agnesia Lubuk</h5>
-                <p class="mt-1 text-sm text-gray-500 uppercase font-semibold">
-                  Founder and CEO
-                </p>
-                <!-- Social Media Buttons -->
-                <div class="mt-6">
-                  <button class="bg-pink-500 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1" type="button">
-                    <!-- Icon -->
-                    <i class="fab fa-dribbble"></i>
-                  </button>
-                  <button class="bg-red-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1" type="button">
-                    <!-- Icon -->
-                    <i class="fab fa-google"></i>
-                  </button>
-                  <button class="bg-blue-400 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1" type="button">
-                    <!-- Icon -->
-                    <i class="fab fa-twitter"></i>
-                  </button>
-                  <button class="bg-gray-800 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1" type="button">
-                    <!-- Icon -->
-                    <i class="fab fa-instagram"></i>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- End of Team Section -->
-
-    <!-- Contact Section -->
-    <section class="pb-20 relative block bg-gray-900">
-      <!-- Making Polygon Shape in Background -->
-      <div
-        class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
-        style="height: 80px; transform: translateZ(0);"
-      >
-        <svg
-          class="absolute bottom-0 overflow-hidden"
-          xmlns="http://www.w3.org/2000/svg"
-          preserveAspectRatio="none"
-          version="1.1"
-          viewBox="0 0 2560 100"
-          x="0"
-          y="0"
-        >
-          <polygon
-            class="text-gray-900 fill-current"
-            points="2560 0 2560 100 0 100"
-          ></polygon>
-        </svg>
-      </div>
-      <!-- Section Container -->
-      <div class="container mx-auto px-4 lg:pt-24 lg:pb-64">
-        <!-- Text Box -->
-        <div class="flex flex-wrap text-center justify-center">
-          <div class="w-full lg:w-6/12 px-4">
-            <h2 class="text-4xl font-semibold text-white">Build something</h2>
-            <p class="text-lg leading-relaxed mt-4 mb-4 text-gray-500">
-              Put the potentially record low maximum sea ice extent tihs year
-              down to low ice. According to the National Oceanic and
-              Atmospheric Administration, Ted, Scambos.
-            </p>
-          </div>
-        </div>
-        <!-- Flex Row Container -->
-        <div class="flex flex-wrap mt-12 justify-center">
-          <!-- Item -->
-          <div class="w-full lg:w-3/12 px-4 text-center">
-            <div class="text-gray-900 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center">
-              <!-- Icon -->
-              <i class="fas fa-medal text-xl"></i>
-            </div>
-            <!-- Text Box -->
-            <h5 class="text-xl mt-5 font-semibold text-white">
-              Excelent Services
-            </h5>
-            <p class="mt-2 mb-4 text-gray-500">
-              Some quick example text to build on the card title and make up
-              the bulk of the card's content.
-            </p>
-          </div>
-          <!-- Item -->
-          <div class="w-full lg:w-3/12 px-4 text-center">
-            <div class="text-gray-900 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center">
-              <!-- Icon -->
-              <i class="fas fa-poll text-xl"></i>
-            </div>
-            <!-- Text Box -->
-            <h5 class="text-xl mt-5 font-semibold text-white">
-              Grow your market
-            </h5>
-            <p class="mt-2 mb-4 text-gray-500">
-              Some quick example text to build on the card title and make up
-              the bulk of the card's content.
-            </p>
-          </div>
-          <!-- Item -->
-          <div class="w-full lg:w-3/12 px-4 text-center">
-            <div class="text-gray-900 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center">
-              <!-- Icon -->
-              <i class="fas fa-lightbulb text-xl"></i>
-            </div>
-            <!-- Text Box -->
-            <h5 class="text-xl mt-5 font-semibold text-white">Launch time</h5>
-            <p class="mt-2 mb-4 text-gray-500">
-              Some quick example text to build on the card title and make up
-              the bulk of the card's content.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Contact Form -->
-    <section class="relative block py-24 lg:pt-0 bg-gray-900">
-      <!-- Container -->
-      <div class="container mx-auto px-4">
-        <div class="flex flex-wrap justify-center lg:-mt-64 -mt-48">
-          <div class="w-full lg:w-6/12 px-4">
-            <div class="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-gray-300">
-              <div class="flex-auto p-5 lg:p-10">
-                <h4 class="text-2xl font-semibold">Want to work with us?</h4>
-                <p class="leading-relaxed mt-1 mb-4 text-gray-600">
-                  Complete this form and we will get back to you in 24 hours.
-                </p>
-                <!-- Name -->
-                <div class="relative w-full mb-3 mt-8">
-                  <label class="block uppercase text-gray-700 text-xs font-bold mb-2" for="full-name">
-                    Full Name
-                  </label
-                  ><input
-                    type="text"
-                    class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
-                    placeholder="Full Name"
-                    style="transition: all 0.15s ease 0s;"
-                  />
-                </div>
-                <!-- Email -->
-                <div class="relative w-full mb-3">
-                  <label class="block uppercase text-gray-700 text-xs font-bold mb-2" for="email">
-                    Email
-                  </label
-                  ><input
-                    type="email"
-                    class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
-                    placeholder="Email"
-                    style="transition: all 0.15s ease 0s;"
-                  />
-                </div>
-                <!-- Message -->
-                <div class="relative w-full mb-3">
-                  <label class="block uppercase text-gray-700 text-xs font-bold mb-2" for="message">
-                    Message
-                  </label
-                  ><textarea
-                    rows="4"
-                    cols="80"
-                    class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
-                    placeholder="Type a message..."
-                  ></textarea>
-                </div>
-                <div class="text-center mt-6">
-                  <button
-                    class="bg-gray-900 text-white active:bg-gray-700 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1"
-                    type="button"
-                    style="transition: all 0.15s ease 0s;"
-                  >
-                    Send Message
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- End of Contact Section -->
-  </main>
-
-  <!-- Footer Section -->
-  <footer class="relative bg-gray-300 pt-8 pb-6">
-    <!-- Making Polygon Shape in Background -->
-    <div
-      class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
-      style="height: 80px; transform: translateZ(0);"
-    >
-      <svg
-        class="absolute bottom-0 overflow-hidden"
-        xmlns="http://www.w3.org/2000/svg"
-        preserveAspectRatio="none"
-        version="1.1"
-        viewBox="0 0 2560 100"
-        x="0"
-        y="0"
-      >
-        <polygon
-          class="text-gray-300 fill-current"
-          points="2560 0 2560 100 0 100"
-        ></polygon>
-      </svg>
-    </div>
-    <!-- Section Container -->
-    <div class="container mx-auto px-4">
-      <!-- Text Box Container -->
-      <div class="flex flex-wrap">
-        <div class="w-full lg:w-6/12 px-4">
-          <h4 class="text-3xl font-semibold">Let's keep in touch!</h4>
-          <h5 class="text-lg mt-0 mb-2 text-gray-700">
-            Find us on any of these platforms, we respond 1-2 business days.
-          </h5>
-          <!-- Social Media Buttons -->
-          <div class="mt-6">
-            <a href="https://www.twitter.com/creativetim" target="_blank"><i class="fab fa-twitter  bg-white text-blue-400 shadow-lg font-lg p-3 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 inline-block text-center"></i></a>
-            <a href="https://www.facebook.com/creativetim" target="_blank"><i class="fab fa-facebook-square bg-white text-blue-600 shadow-lg font-lg p-3 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 inline-block text-center"></i></a>
-            <a href="https://www.dribbble.com/creativetim" target="_blank"><i class="fab fa-dribbble bg-white text-pink-400 shadow-lg font-lg p-3 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 inline-block text-center"></i></a>
-            <a href="https://www.github.com/creativetimofficial" target="_blank"><i class="fab fa-github bg-white text-gray-900 shadow-lg font-lg p-3 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 inline-block text-center"></i></a>
-          </div>
-        </div>
-      <!-- List Container -->
-      <div class="w-full lg:w-6/12 px-4">
-          <div class="flex flex-wrap items-top mb-6">
-            <!-- List 1 -->
-            <div class="w-full lg:w-4/12 px-4 ml-auto">
-              <span class="block uppercase text-gray-600 text-sm font-semibold mb-2">Useful Links</span>
-              <ul class="list-unstyled">
-                <li>
-                  <a class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                     href="https://www.creative-tim.com/presentation">About Us</a>
-                </li>
-                <li>
-                  <a class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                     href="https://blog.creative-tim.com">Blog</a>
-                </li>
-                <li>
-                  <a class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                     href="https://www.github.com/creativetimofficial">Github</a>
-                </li>
-                <li>
-                  <a class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                     href="https://www.creative-tim.com/bootstrap-themes/free">Free Products</a>
-                </li>
-              </ul>
-            </div>
-            <!-- List 2 -->
-            <div class="w-full lg:w-4/12 px-4">
-              <span class="block uppercase text-gray-600 text-sm font-semibold mb-2">Other Resources</span>
-              <ul class="list-unstyled">
-                <li>
-                  <a class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                     href="https://github.com/creativetimofficial/argon-design-system/blob/master/LICENSE.md">MIT License</a>
-                </li>
-                <li>
-                  <a class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                     href="https://creative-tim.com/terms">Terms &amp; Conditions</a>
-                </li>
-                <li>
-                  <a class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                     href="https://creative-tim.com/privacy">Privacy Policy</a>
-                </li>
-                <li>
-                  <a class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                     href="https://creative-tim.com/contact-us">Contact Us</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Line Break -->
-      <hr class="my-6 border-gray-400" />
-      <!-- Footer Text -->
-      <div class="flex flex-wrap items-center md:justify-between justify-center">
-        <div class="w-full md:w-4/12 px-4 mx-auto text-center">
-          <div class="text-sm text-gray-600 font-semibold py-1">
-            Copyright © 2019 Tailwind Starter Kit by
-            <a
-              href="https://www.creative-tim.com"
-              class="text-gray-600 hover:text-gray-900"
-              >Creative Tim</a
-            >.
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
-  <!-- End of Footer Section -->
-</body>
-<!-- AOS.js -->
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>AOS.init({// Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
-  // offset: 120, // offset (in px) from the original trigger point
-  delay: 200, // values from 0 to 3000, with step 50ms
-  duration: 1500, // values from 0 to 3000, with step 50ms
-  // easing: 'ease', // default easing for AOS animations
-  once: false, // whether animation should happen only once - while scrolling down
-  mirror: false, // whether elements should animate out while scrolling past them
-  // anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
-});</script>
-<!-- Navigation Script -->
-<script>
-  function toggleNavbar(collapseID) {
-    document.getElementById(collapseID).classList.toggle("hidden");
-    document.getElementById(collapseID).classList.toggle("block");
-  }
-</script>
+    </footer>
+    <!-- End of Footer Section -->
+  </body>
+  <!-- AOS.js -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="/script.js"></script>
+  <!-- Navigation Script -->
+  <script src="/navbar.js"></script>
 </html>
